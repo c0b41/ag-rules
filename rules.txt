@@ -96,8 +96,9 @@ google.com##[aria-label="Ads"]
 google.com##[aria-label="Reklamlar"]
 
 ! Spam stackoverflow websites
-google.com#?#div[data-hveid]:has(> div > div > a[href*="codegrepper.com"])
-google.com#?#div[data-hveid]:has(> div > div > a[href*="anycodings.com"])
+google.com#?#cite:contains(/anycodings.com/):nth-ancestor(5)
+google.com#?#cite:contains(/codegrepper.com/):nth-ancestor(5)
+google.com#?#cite:contains(/sololearn.com/):nth-ancestor(5)
 
 ! Twitch
 twitch.tv##[aria-label="Popular Channels"]
