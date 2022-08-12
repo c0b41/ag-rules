@@ -74,9 +74,11 @@ open.spotify.com##a[href^="/download"]
 ||gew1-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
 
 ! For bullshit Fonts
-open.scdn.co/cdn/fonts/*.woff$font
-open.scdn.co/cdn/fonts/*.ttf$font
-open.scdn.co/cdn/fonts/*.otf
+*.scdn.co/fonts/*.woff$font
+*.scdn.co/fonts/*.woff2$font
+*.scdn.co/fonts/*.ttf$font
+*.scdn.co/fonts/*.otf$font
+*.spotifycdn.com/cdn/fonts/*.woff2$font
 
 ! YtMusic and Youtube
 youtube.com##ytd-browse[page-subtype="home"]
