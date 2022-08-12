@@ -1,0 +1,116 @@
+! Trakt.tv
+trakt.tv###snhb-in_content-1-0 > a.hu-ck--st-er-e250f397a:last-child > img
+trakt.tv###snhb-in_content-1-0
+trakt.tv###hu-ck--st-er-desk-top-wrapper
+trakt.tv##.e20df-grid-item
+
+! EkşiSözlük
+eksisozluk.com###aside > iframe.lazy.lazy-loaded:nth-child(3)
+eksisozluk.com###aside > div.fb-page.fb_iframe_widget:nth-child(5) > span > iframe
+eksisozluk.com###aside > div.fb-page.fb_iframe_widget:nth-child(6) > span > iframe
+eksisozluk.com###twitter-widget-0
+eksisozluk.com#%#//scriptlet('set-cookie', 'notheme', '1')
+||connect.facebook.net/tr_TR/sdk.js*$domain=eksisozluk.com
+||platform.twitter.com/widgets.js*$domain=eksisozluk.com
+
+! Github
+github.com##body > div.notification-shelf
+github.com###feed-next
+
+! Twitter
+
+! For bullshit Fonts
+abs.twimg.com/fonts/chirp-*.woff$font
+abs.twimg.com/fonts/v2/chirp-*.woff$font
+
+twitter.com#$#[role="menu"]{ width: 250px; }
+twitter.com##[aria-label="Gündemdekiler"]
+twitter.com##[data-testid="DMDrawerHeader"]
+twitter.com##[data-testid="DMDrawer"]
+twitter.com##[aria-labelledby="accessible-list-9"]
+twitter.com##a[href^="/i/connect_people?user_id="]
+twitter.com##a[href^="/i/flow/convert_to_professional"]
+twitter.com##a[href^="https://ads.twitter.com/"]
+twitter.com##a[href="/i/lists/suggested"]
+twitter.com##div[data-testid="sidebarColumn"]
+||twitter.com/i/api/1.1/users/recommendations.json
+twitter.com##div[aria-label="Zaman Akışı: Listelerin"] > div > div:has(h2:has-text(Yeni Listeleri keşfet)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
+twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
+twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip edilebilecek Konular)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
+
+! Spotify 
+open.spotify.com##[data-testid="signup-bar"]
+open.spotify.com##[aria-label="Premium'a Yükselt"]
+open.spotify.com##.sponsor-container
+
+! Spotify dumb podcast suggestions
+open.spotify.com##[data-testid="inAppMessageContainer"]
+open.spotify.com##[aria-label="Hoşuna gidebilecek programlar"]
+open.spotify.com##[aria-label="15 dakikalık veya daha kısa programlar"]
+open.spotify.com##[aria-label="Denemeye değer programlar"]
+open.spotify.com##[data-testid="test-ref-div"]
+open.spotify.com##[aria-label="Komedi saati"]
+open.spotify.com##[aria-label="The Joe Rogan Experience dinleyicileri arasında popüler"]
+open.spotify.com##[aria-label="Teknoloji dünyası"]
+open.spotify.com##[aria-label="Yeni bölümler"]
+open.spotify.com##[aria-label="2020'nin En Çok Dinlenen Podcast'leri"]
+open.spotify.com##[aria-label="Her zaman güncel"]
+open.spotify.com##[aria-label="Manşetlerin ötesinde"]
+open.spotify.com##[aria-label="This month's featured songwriter"]
+open.spotify.com##[aria-label="Bu ay öne çıkan besteci"]
+open.spotify.com##[aria-label="Stories of Resilience"]
+open.spotify.com##[aria-label="Sana özel bölümler"]
+open.spotify.com##[aria-label="Bu çalma listesindeki içeriklere göre önerilenler"]
+open.spotify.com##div.ReactModalPortal:nth-child(16) > div.GenericModal__overlay.GenericModal__overlay--animated.GenericModal__overlay--afterOpen
+open.spotify.com##a[href^="/download"]
+
+! Bullshit playlist covers
+||dailymix-images.scdn.co^$domain=open.spotify.com
+||seed-mix-image.spotifycdn.com^$domain=open.spotify.com
+
+! Trackers and ads streaming
+||adeventtracker.spotify.com^
+||spclient.wg.spotify.com/storage-resolve/files/audio/interactive/*$domain=open.spotify.com
+||gew1-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
+
+! For bullshit Fonts
+open.scdn.co/cdn/fonts/*.woff$font
+open.scdn.co/cdn/fonts/*.ttf$font
+open.scdn.co/cdn/fonts/*.otf
+
+! YtMusic and Youtube
+youtube.com##ytd-browse[page-subtype="home"]
+youtube.com##.html5-endscreen
+youtube.com###voice-search-button
+
+! User actions trackers
+||music.youtube.com/youtubei/v1/log_event^$domain=music.youtube.com
+||youtube.com/youtubei/v1/log_event^$domain=www.youtube.com
+
+! Shorts
+youtube.com##[title="Shorts"]
+www.youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:not([hidden]):upward(6)
+
+! Google 
+google.com##[aria-label="Ads"]
+google.com##[aria-label="Reklamlar"]
+
+! Spam stackoverflow websites
+google.com#?#div[data-hveid]:has(> div > div > a[href*="codegrepper.com"])
+google.com#?#div[data-hveid]:has(> div > div > a[href*="anycodings.com"])
+
+! Twitch
+twitch.tv##[aria-label="Popular Channels"]
+twitch.tv##[aria-label*="Viewers Also Watch"]
+twitch.tv##[data-popper-placement="bottom"]
+twitch.tv##.Layout-sc-nxg1ff-0 gTIuHP
+twitch.tv##.top-nav__prime
+twitch.tv###root > div > div.Layout-sc-nxg1ff-0.qViOJ > div.Layout-sc-nxg1ff-0.kXaHWh > main > div.root-scrollable.scrollable-area.scrollable-area--suppress-scroll-x > div.simplebar-scroll-content > div > div > div > div.Layout-sc-nxg1ff-0.gRnGwD.front-page-carousel
+twitch.tv###sideNav > div > div > div > div > div.simpl
+
+! Others
+
+filmmodu*.com###preroll-link
+||filmmodu*.com/ph/ps3.png$domain=filmmodu*.com
+
+
