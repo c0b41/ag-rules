@@ -61,12 +61,13 @@ open.spotify.com##[aria-label="Bu ay öne çıkan besteci"]
 open.spotify.com##[aria-label="Stories of Resilience"]
 open.spotify.com##[aria-label="Sana özel bölümler"]
 open.spotify.com##[aria-label="Bu çalma listesindeki içeriklere göre önerilenler"]
-open.spotify.com##div.ReactModalPortal:nth-child(16) > div.GenericModal__overlay.GenericModal__overlay--animated.GenericModal__overlay--afterOpen
+open.spotify.com##div.GenericModal__overlay.GenericModal__overlay--animated.GenericModal__overlay--afterOpen
 open.spotify.com##a[href^="/download"]
 
 ! Bullshit playlist covers
 ||dailymix-images.scdn.co^$domain=open.spotify.com
 ||seed-mix-image.spotifycdn.com^$domain=open.spotify.com
+||newjams-images.scdn.co^$domain=open.spotify.com
 
 ! Trackers and ads streaming
 ||adeventtracker.spotify.com^
@@ -98,11 +99,16 @@ google.com##[aria-label="Ads"]
 google.com##[aria-label="Reklamlar"]
 
 ! Spam stackoverflow websites
+google.com###bottomads
+google.com##[aria-label="Ads"]
+google.com##[aria-label="Reklamlar"]
 google.com#?#cite:contains(/anycodings.com/):nth-ancestor(5)
 google.com#?#cite:contains(/codegrepper.com/):nth-ancestor(5)
 google.com#?#cite:contains(/sololearn.com/):nth-ancestor(5)
 
 ! Twitch
+twitch.tv#%#//scriptlet('remove-cookie', 'unique_id')
+twitch.tv#%#//scriptlet('remove-cookie', 'unique_id_durable')
 twitch.tv##[aria-label="Popular Channels"]
 twitch.tv##[aria-label*="Viewers Also Watch"]
 twitch.tv##[data-popper-placement="bottom"]
