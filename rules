@@ -9,6 +9,7 @@ eksisozluk.com###aside > iframe.lazy.lazy-loaded:nth-child(3)
 eksisozluk.com###aside > div.fb-page.fb_iframe_widget:nth-child(5) > span > iframe
 eksisozluk.com###aside > div.fb-page.fb_iframe_widget:nth-child(6) > span > iframe
 eksisozluk.com###twitter-widget-0
+eksisozluk.com###search-box-ad
 eksisozluk.com#%#//scriptlet('set-cookie', 'notheme', '1')
 ||connect.facebook.net/tr_TR/sdk.js*$domain=eksisozluk.com
 ||platform.twitter.com/widgets.js*$domain=eksisozluk.com
@@ -63,6 +64,7 @@ open.spotify.com##[aria-label="Sana özel bölümler"]
 open.spotify.com##[aria-label="Bu çalma listesindeki içeriklere göre önerilenler"]
 open.spotify.com##div.GenericModal__overlay.GenericModal__overlay--animated.GenericModal__overlay--afterOpen
 open.spotify.com##a[href^="/download"]
+open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;} 
 
 ! Bullshit playlist covers
 ||dailymix-images.scdn.co^$domain=open.spotify.com
@@ -124,4 +126,9 @@ filmmodu*.com###preroll-link
 
 instagram.com#$#._aam3{ max-width: 530px !important; margin-right:100px !important; }
 instagram.com##._aak3
+
+substack.com#$#html { overflow: visible!important; }
+substack.com#$#body { overflow: visible!important; }
+substack.com##div[class^="subscribe-"]
+substack.com##.default-intro-popup
 
