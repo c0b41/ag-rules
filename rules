@@ -124,7 +124,9 @@ twitch.tv###sideNav > div > div > div > div > div.simpl
 filmmodu*.com###preroll-link
 ||filmmodu*.com/ph/ps3.png$domain=filmmodu*.com
 
-instagram.com#$#._aam3{ max-width: 530px !important; margin-right:100px !important; }
+instagram.com#$#._aam2{ max-width: 650px !important; margin-right:50px !important; } 
+instagram.com#$#._aalx{ margin-left: 55px !important; }
+instagram.com##._acgg
 instagram.com##._aak3
 
 substack.com#$#html { overflow: visible!important; }
