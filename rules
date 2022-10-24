@@ -144,3 +144,5 @@ substack.com#$#body { overflow: visible!important; }
 substack.com##div[class^="subscribe-"]
 substack.com##.default-intro-popup
 
+last.fm##a[href="/pro"]
+last.fm##.stationlink-list
