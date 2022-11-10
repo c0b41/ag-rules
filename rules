@@ -129,6 +129,9 @@ news.ycombinator.com##.morespace:style( background-color: #f6f6ef; display: bloc
 news.ycombinator.com##.comtr > td > table:style( width: 100%; )
 news.ycombinator.com###hnmain > tbody > tr:last-child:style( position: relative; )
 
+news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bTwitter\b/):upward(tr):remove()
+news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bMusk\b/):upward(tr):remove()
+news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bMastodon\b/):upward(tr):remove()
 
 ! Others
 
