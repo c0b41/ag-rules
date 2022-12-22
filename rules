@@ -17,6 +17,8 @@ eksisozluk.com#%#//scriptlet('set-cookie', 'notheme', '1')
 ! Github
 github.com##body > div.notification-shelf
 github.com###feed-next
+! Pull Request warning annotation
+! github.com##.check-annotation-warning
 
 ! Twitter
 
@@ -43,6 +45,9 @@ twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip
 open.spotify.com##[data-testid="signup-bar"]
 open.spotify.com##[aria-label="Premium'a Yükselt"]
 open.spotify.com##.sponsor-container
+open.spotify.com##div.GenericModal__overlay.GenericModal__overlay--animated.GenericModal__overlay--afterOpen
+open.spotify.com##a[href^="/download"]
+open.spotify.com##a[href^="https://www.spotify.com/premium"]
 
 ! Spotify dumb podcast suggestions
 open.spotify.com##[data-testid="inAppMessageContainer"]
@@ -62,8 +67,8 @@ open.spotify.com##[aria-label="Bu ay öne çıkan besteci"]
 open.spotify.com##[aria-label="Stories of Resilience"]
 open.spotify.com##[aria-label="Sana özel bölümler"]
 open.spotify.com##[aria-label="Bu çalma listesindeki içeriklere göre önerilenler"]
-open.spotify.com##div.GenericModal__overlay.GenericModal__overlay--animated.GenericModal__overlay--afterOpen
-open.spotify.com##a[href^="/download"]
+
+! Embed stuff
 open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;} 
 
 ! Bullshit playlist covers
@@ -95,6 +100,7 @@ youtube.com###voice-search-button
 ! Shorts
 youtube.com##[title="Shorts"]
 www.youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:not([hidden]):upward(6)
+www.youtube.com##.ytd-reel-shelf-renderer:has-text(/\bShorts\b/):upward(ytd-reel-shelf-renderer):remove()
 
 ! Google 
 google.com##[aria-label="Ads"]
@@ -132,6 +138,7 @@ news.ycombinator.com###hnmain > tbody > tr:last-child:style( position: relative;
 news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bTwitter\b/):upward(tr):remove()
 news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bMusk\b/):upward(tr):remove()
 news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bMastodon\b/):upward(tr):remove()
+news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bTesla\b/):upward(tr):remove()
 
 ! Others
 
