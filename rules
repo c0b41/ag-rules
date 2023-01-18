@@ -146,8 +146,9 @@ news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bTesla\b/):upward(
 filmmodu*.com###preroll-link
 ||filmmodu*.com/ph/ps3.png$domain=filmmodu*.com
 
-instagram.com#$#._aam2{ max-width: 650px !important; margin-left: -200px !important; }
+instagram.com#$#._ajrq{ max-width: 650px !important; margin-left: -200px !important; }
 instagram.com##._aak3
+||instagram.com/logging/falco
 
 substack.com#$#html { overflow: visible!important; }
 substack.com#$#body { overflow: visible!important; }
