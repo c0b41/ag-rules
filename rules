@@ -146,8 +146,16 @@ news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bTesla\b/):upward(
 filmmodu*.com###preroll-link
 ||filmmodu*.com/ph/ps3.png$domain=filmmodu*.com
 
-instagram.com#$#._ajrq{ max-width: 650px !important; margin-left: -200px !important; }
+! Broken instagram styles 
+instagram.com#$#._a995{ margin-top: 30px !important; }
+instagram.com#$#._a994{ margin-top: 30px !important; }
+instagram.com#$#._acun{ background-color: #fff !important; padding-bottom: 30px !important; padding-top: 30px !important; max-width: 100vw !important; }
+instagram.com#$#._acus{ align-items: center !important; }
+
+! Current styles
+instagram.com#$#._ajrq{ max-width: 750px !important; padding-top: 20px !important; margin: 0 auto !important; }
 instagram.com##._aak3
+instagram.com##._aak9
 ||instagram.com/logging/falco
 ! https://github.com/AdguardTeam/AdguardFilters/issues/137874 Broken rule for revert.
 instagram.com##article[role="presentation"] > div:-abp-has(span:-abp-contains(/Gesponsert|Sponsored|Geborg|Sponzorováno|Sponsoreret|Χορηγούμενη|Publicidad|Sponsoroitu|Sponsorisé|Bersponsor|Sponsorizzato|広告|광고|Ditaja|Sponset|Gesponsord|Sponsorowane|Patrocinado|Реклама|Sponsrad|ได้รับการสนับสนุน|May Sponsor|Sponsorlu|赞助内容|贊助|প্রযোজিত|પ્રાયોજિત|स्पॉन्सर्ड|Sponzorirano|ಪ್ರಾಯೋಜಿತ|സ്‌പോൺസർ ചെയ്‌തത്|पुरस्‍कृत|प्रायोजित|ਪ੍ਰਾਯੋਜਿਤ|මුදල් ගෙවා ප්‍රචාරය කරන ලදි|Sponzorované|விளம்பரதாரர்கள்|స్పాన్సర్ చేసింది|Được tài trợ|Спонсорирано|Commandité|Sponsorizat|Спонзорисано/))
