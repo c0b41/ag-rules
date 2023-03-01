@@ -68,6 +68,7 @@ open.spotify.com##[aria-label="Bu ay öne çıkan besteci"]
 open.spotify.com##[aria-label="Stories of Resilience"]
 open.spotify.com##[aria-label="Sana özel bölümler"]
 open.spotify.com##[aria-label="Bu çalma listesindeki içeriklere göre önerilenler"]
+open.spotify.com##[aria-label="Bugün için tavsiye"]
 
 ! Embed stuff
 open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;} 
@@ -163,7 +164,7 @@ instagram.com#$#._acun{ background-color: #fff !important; padding-bottom: 30px 
 instagram.com#$#._acus{ align-items: center !important; }
 
 ! Current styles
-instagram.com#$#._ajrq{ max-width: 750px !important; padding-top: 20px !important; margin: 0 auto !important; }
+instagram.com#$#._akej{ max-width: 750px !important; padding-top: 20px !important; margin: 0 auto !important; }
 instagram.com##._aak3
 instagram.com##._aak9
 ||instagram.com/logging/falco
