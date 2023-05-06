@@ -17,6 +17,7 @@ eksisozluk.com#%#//scriptlet('set-cookie', 'notheme', '1')
 ! Github
 github.com##body > div.notification-shelf
 github.com###feed-next
+github.com#$#.feed-left-sidebar{ width:300px !important; }
 ! Pull Request warning annotation
 ! github.com##.check-annotation-warning
 
