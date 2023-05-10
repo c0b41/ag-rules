@@ -46,6 +46,7 @@ twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip
 ||twitter.com/i/api/1.1/users/recommendations.json
 
 ! Spotify 
+open.spotify.com##[data-testid="inAppMessageIframe"]
 open.spotify.com##[data-testid="signup-bar"]
 open.spotify.com##[aria-label="Premium'a Yükselt"]
 open.spotify.com##.sponsor-container
