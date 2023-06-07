@@ -132,6 +132,9 @@ twitch.tv##.top-nav__prime
 twitch.tv###root > div > div.Layout-sc-nxg1ff-0.qViOJ > div.Layout-sc-nxg1ff-0.kXaHWh > main > div.root-scrollable.scrollable-area.scrollable-area--suppress-scroll-x > div.simplebar-scroll-content > div > div > div > div.Layout-sc-nxg1ff-0.gRnGwD.front-page-carousel
 twitch.tv###sideNav > div > div > div > div > div.simplebar-scroll-content > div > div > div.side-bar-contents > div > div.Layout-sc-nxg1ff-0.aleoz > div:nth-child(3)
 
+! Dogshit new Directory ui replace with old ui url
+twitch.tv#%#navigation.addEventListener("navigate",t=>{let a=new URL(t.destination.url);a.pathname.startsWith("/directory/game/")&&!a.pathname.includes("/list")&&(window.location.pathname=`${a.pathname}/list`)});
+
 ! Twitch Extensions
 ||extension-files.twitch.tv
 ||ext-twitch.tv
