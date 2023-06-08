@@ -98,15 +98,21 @@ open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;}
 youtube.com##ytd-browse[page-subtype="home"]
 youtube.com##.html5-endscreen
 youtube.com###voice-search-button
+youtube.com#$#.ytd-thumbnail{ border-radius:unset !important; }
 
 ! User actions trackers
 ||music.youtube.com/youtubei/v1/log_event^$domain=music.youtube.com
 ||youtube.com/youtubei/v1/log_event^$domain=www.youtube.com
+||youtube-nocookie.com/youtubei/v1/log_event
 
 ! Shorts
 youtube.com##[title="Shorts"]
-www.youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:not([hidden]):upward(6)
-www.youtube.com##.ytd-reel-shelf-renderer:has-text(/\bShorts\b/):upward(ytd-reel-shelf-renderer):remove()
+youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:not([hidden]):upward(6)
+youtube.com##.ytd-thumbnail-overlay-time-status-renderer[aria-label="Shorts"]:upward(#dismissible)
+youtube.com##ytd-rich-item-renderer:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"])
+youtube.com##ytd-rich-grid-row:style(display:contents !important;)
+youtube.com###contents.ytd-rich-grid-row:style(display:contents !important;)
+youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
 
 ! Google 
 google.com##[aria-label="Ads"]
