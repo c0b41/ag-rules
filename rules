@@ -98,6 +98,7 @@ open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;}
 youtube.com##ytd-browse[page-subtype="home"]
 youtube.com##.html5-endscreen
 youtube.com###voice-search-button
+youtube.com##.ytp-quality-menu [role="menuitemradio"]:has-text(Premium)
 youtube.com#$#.ytd-thumbnail{ border-radius:unset !important; }
 
 ! User actions trackers
