@@ -166,6 +166,11 @@ news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bTwitter\b/):upwar
 news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bMusk\b/):upward(tr):remove()
 news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bMastodon\b/):upward(tr):remove()
 news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bTesla\b/):upward(tr):remove()
+news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bReddit\b/):upward(tr):remove()
+
+! Reddit
+reddit.com##div.side:nth-child(5) > div.spacer:nth-child(5) > a.premium-banner-outer > form.premium-banner
+reddit.com#$#[aria-label="downvote"]{ display:block !important;}
 
 ! Others
 
