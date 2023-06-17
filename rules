@@ -170,8 +170,7 @@ news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bReddit\b/):upward
 
 ! Reddit
 reddit.com##div.side:nth-child(5) > div.spacer:nth-child(5) > a.premium-banner-outer > form.premium-banner
-reddit.com#$#[aria-label="downvote"]{ display:block !important;}
-
+reddit.com#$#[aria-label="downvote"]{ display:block !important; visibility: unset !important;}
 ! Others
 
 filmmodu*.com###preroll-link
