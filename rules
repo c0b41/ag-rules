@@ -131,6 +131,7 @@ google.com#?#cite:contains(/sololearn.com/):nth-ancestor(5)
 ! Twitch
 twitch.tv#%#//scriptlet('remove-cookie', 'unique_id')
 twitch.tv#%#//scriptlet('remove-cookie', 'unique_id_durable')
+twitch.tv###channel-player-disclosures
 twitch.tv##[aria-label="Popular Channels"]
 twitch.tv##[aria-label*="Viewers Also Watch"]
 twitch.tv##[data-popper-placement="bottom"]
