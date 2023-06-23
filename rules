@@ -95,6 +95,8 @@ open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;}
 *.spotifycdn.com/cdn/fonts/*.woff2$font
 
 ! YtMusic and Youtube
+youtube.com##[title="Play on TV"]
+youtube.com##[title="Miniplayer (i)"]
 youtube.com##ytd-browse[page-subtype="home"]
 youtube.com##.html5-endscreen
 youtube.com###voice-search-button
