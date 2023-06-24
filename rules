@@ -40,7 +40,7 @@ twitter.com##a[href^="https://ads.twitter.com/"]
 twitter.com##a[href="/i/lists/suggested"]
 twitter.com##div[data-testid="sidebarColumn"]
 twitter.com##a[href*="/analytics"]:upward(div):remove()
-twitter.com##div[aria-label="Zaman Akışı: Listelerin"] > div > div:has(h2:has-text(Yeni Listeleri keşfet)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
+twitter.com##div[aria-label="Zaman Akışı: Listelerin"] > div > div > div > div:has(h2:has-text(Yeni Listeleri keşfet)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
 twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
 twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip edilebilecek Konular)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
 ||twitter.com/i/api/1.1/users/recommendations.json
