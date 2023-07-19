@@ -117,15 +117,9 @@ youtube.com##ytd-rich-item-renderer:has(ytd-thumbnail-overlay-time-status-render
 youtube.com##ytd-rich-grid-row:style(display:contents !important;)
 youtube.com###contents.ytd-rich-grid-row:style(display:contents !important;)
 youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
-
-! Google 
-google.com##[aria-label="Ads"]
-google.com##[aria-label="Reklamlar"]
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
 
 ! Spam stackoverflow websites
-google.com###bottomads
-google.com##[aria-label="Ads"]
-google.com##[aria-label="Reklamlar"]
 google.com#?#cite:contains(/anycodings.com/):nth-ancestor(5)
 google.com#?#cite:contains(/codegrepper.com/):nth-ancestor(5)
 google.com#?#cite:contains(/sololearn.com/):nth-ancestor(5)
