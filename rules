@@ -2,7 +2,17 @@
 trakt.tv###snhb-in_content-1-0 > a.hu-ck--st-er-e250f397a:last-child > img
 trakt.tv###snhb-in_content-1-0
 trakt.tv###hu-ck--st-er-desk-top-wrapper
-trakt.tv##.f1a979-grid-item
+trakt.tv##.af1a979-grid-item
+trakt.tv##a[href^="/vip/advertising"]
+
+trakt.tv#%#//scriptlet("set-constant", "artemisInit", "noopFunc")
+trakt.tv#%#//scriptlet("set-constant", "artemisSnigel", "noopFunc")
+trakt.tv#%#//scriptlet("set-constant", "artemisBT", "noopFunc")
+trakt.tv#%#//scriptlet("set-constant", "snigelArtemises", "undefined")
+
+||trakt.tv/assets/b6a0a7$image
+||trakt.tv/assets/b6a0a7$media,redirect=noopmp4-1s
+trakt.tv##.snigel:upward(div):remove()
 
 ! EkşiSözlük
 eksisozluk.com###aside > iframe.lazy.lazy-loaded:nth-child(3)
