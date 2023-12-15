@@ -96,9 +96,18 @@ open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;}
 ||newjams-images.scdn.co^$domain=open.spotify.com
 
 ! Trackers and ads streaming
+||creativeservice-production.scdn.co^$domain=open.spotify.com
+||adeventtrackermonitoring.spotify.com^$domain=open.spotify.com
 ||adeventtracker.spotify.com^
 ||spclient.wg.spotify.com/storage-resolve/files/audio/interactive/*$domain=open.spotify.com
 ||gew1-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
+||gew2-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
+||gew3-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
+||gew4-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
+! Covers 
+||dailymix-images.scdn.co^$domain=open.spotify.com
+||seed-mix-image.spotifycdn.com^$domain=open.spotify.com
+||newjams-images.scdn.co^$domain=open.spotify.com
 
 ! For bullshit Fonts
 *.scdn.co/fonts/*.woff$font
@@ -149,6 +158,10 @@ twitch.tv##.Layout-sc-nxg1ff-0 gTIuHP
 twitch.tv##.top-nav__prime
 twitch.tv###root > div > div.Layout-sc-nxg1ff-0.qViOJ > div.Layout-sc-nxg1ff-0.kXaHWh > main > div.root-scrollable.scrollable-area.scrollable-area--suppress-scroll-x > div.simplebar-scroll-content > div > div > div > div.Layout-sc-nxg1ff-0.gRnGwD.front-page-carousel
 twitch.tv###sideNav > div > div > div > div > div.simplebar-scroll-content > div > div > div.side-bar-contents > div > div.Layout-sc-nxg1ff-0.aleoz > div:nth-child(3)
+#twitch.tv##iframe[title="Display Ad"]
+#twitch.tv##[data-a-target="browse-card-ad-slot"]
+#twitch.tv##[data-a-target="browse-banner-ad-slot"]
+||ads.twitch.tv$domain=twitch.tv
 
 ! Dogshit new Directory ui replace with old ui url
 twitch.tv#%#navigation.addEventListener("navigate",t=>{let a=new URL(t.destination.url);a.pathname.startsWith("/directory/category/")&&!a.pathname.includes("/list")&&(window.location.pathname=`${a.pathname}/list`)});
