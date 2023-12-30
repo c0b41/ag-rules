@@ -67,6 +67,14 @@
 ||segment.com^
 ||analyticsengine.s3.amazonaws.com^
 ||analytics.s3.amazonaws.com^
+||analytics.qushad.com^
+||mc.yandex.com^
+||analitik.bik.gov.tr^
+||haberturk.com/adscbg/cbglout.js$domain=haberturk.com^
+||sdk.mrf.io/statics/marfeel-sdk.js
+||statistics.daktilo.com/stats/adverts^
+||statistics.daktilo.com/stats/visitors^
+||events.newsroom.bi/ingest.php^
 
 ! after
 ||adtago.s3.amazonaws.com^
