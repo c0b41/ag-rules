@@ -56,6 +56,7 @@ twitter.com##div[aria-label="Zaman Akışı: Listelerin"] > div > div > div > di
 twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
 twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip edilebilecek Konular)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
 ||twitter.com/i/api/1.1/users/recommendations.json
+twitter.com#%#//scriptlet('json-prune', 'data.viewer.list_management_timeline.timeline.instructions.3.entries.0')
 
 ! Spotify 
 open.spotify.com##[data-testid="inAppMessageIframe"]
@@ -220,3 +221,5 @@ substack.com##.default-intro-popup
 
 last.fm##a[href="/pro"]
 last.fm##.stationlink-list
+
+trello.com##.js-list-color-picker
