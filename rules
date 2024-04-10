@@ -87,6 +87,7 @@ open.spotify.com##[aria-label="Sana özel bölümler"]
 open.spotify.com##[aria-label="Bu çalma listesindeki içeriklere göre önerilenler"]
 open.spotify.com##[aria-label="Bugün için tavsiye"]
 open.spotify.com##[aria-label="Bugünün en çok dinlenenleri"]
+open.spotify.com##[aria-label="Popüler radyolar"]
 
 ! Embed stuff
 open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;} 
