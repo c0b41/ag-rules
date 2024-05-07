@@ -39,23 +39,28 @@ abs.twimg.com/fonts/v2/chirp-*.woff$font
 
 twitter.com#$#[role="menu"]{ width: 250px; }
 twitter.com##[aria-label="Gündemdekiler"]
+twitter.com##[aria-label="Gönderi istatistiklerini görüntüle"]
 twitter.com##[data-testid="DMDrawerHeader"]
 twitter.com##[data-testid="DMDrawer"]
 twitter.com##[aria-labelledby="accessible-list-9"]
 twitter.com##a[href*="/communities"]
 twitter.com##a[href^="/i/verified-orgs-signup"]
 twitter.com##a[href^="/i/twitter_blue_sign_up"]
+twitter.com##a[href^="/i/premium_sign_up"]
 twitter.com##a[href^="/i/connect_people?user_id="]
 twitter.com##a[href^="/i/flow/convert_to_professional"]
 twitter.com##a[href^="https://ads.twitter.com/"]
 twitter.com##a[href="/i/lists/suggested"]
 twitter.com##a[href="/i/verified-choose"]
+twitter.com##a[href="/i/spaces/start"]
+twitter.com##a[href="/i/grok"]
 twitter.com##a[href*="/analytics"]:upward(div):remove()
+twitter.com##a[href*="/jobs"]:upward(div):remove()
 twitter.com##div[data-testid="sidebarColumn"]
-twitter.com##div[aria-label="Zaman Akışı: Listelerin"] > div > div > div > div:has(h2:has-text(Yeni Listeleri keşfet)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
-twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
-twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip edilebilecek Konular)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
 ||twitter.com/i/api/1.1/users/recommendations.json
+!twitter.com##div[aria-label^="Zaman Akışı"] > div > div > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
+!twitter.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip edilebilecek Konular)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
+!twitter.com#%#//scriptlet('json-prune', 'data.user.result.timeline_v2.timeline.instructions.[].entries.[].content.clientEventInfo')
 twitter.com#%#//scriptlet('json-prune', 'data.viewer.list_management_timeline.timeline.instructions.3.entries.0')
 
 ! Spotify 
