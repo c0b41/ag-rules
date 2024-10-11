@@ -37,6 +37,7 @@ github.com#$#.feed-left-sidebar{ width:300px !important; }
 abs.twimg.com/fonts/chirp-*.woff$font
 abs.twimg.com/fonts/v2/chirp-*.woff$font
 
+
 x.com#$#[role="menu"]{ width: 250px; }
 x.com##[aria-label="Gündemdekiler"]
 x.com##[aria-label="Gönderi istatistiklerini görüntüle"]
@@ -53,15 +54,20 @@ x.com##a[href="/i/lists/suggested"]
 x.com##a[href="/i/verified-choose"]
 x.com##a[href="/i/spaces/start"]
 x.com##a[href="/i/grok"]
-x.com##a[href="/settings/monetization"]
+x.com##a[href="/i/monetization"]
+!x.com##a[href*="/communities"]
 x.com##a[href="/jobs"]
 x.com##a[href*="/analytics"]:upward(div):remove()
 x.com##div[data-testid="sidebarColumn"]
+x.com##[aria-label="Topluluklar"]
 ||x.com/i/api/1.1/users/recommendations.json
 !x.com##div[aria-label^="Zaman Akışı"] > div > div > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
 !x.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip edilebilecek Konular)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
 !x.com#%#//scriptlet('json-prune', 'data.user.result.timeline_v2.timeline.instructions.[].entries.[].content.clientEventInfo')
+! list page follow suggestion block
 x.com#%#//scriptlet('json-prune', 'data.viewer.list_management_timeline.timeline.instructions.3.entries.0')
+! trending page video carousel blcok
+x.com#%#//scriptlet('json-prune', 'data.explore_page.body.initialTimeline.timeline.timeline.instructions.1.entries.3')
 
 ! Spotify 
 open.spotify.com##[data-testid="inAppMessageIframe"]
