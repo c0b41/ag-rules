@@ -117,7 +117,8 @@ open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;}
 ||gew2-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
 ||gew3-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
 ||gew4-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
-! Covers 
+! Covers
+||pickasso.spotifycdn.com^$domain=open.spotify.com
 ||dailymix-images.scdn.co^$domain=open.spotify.com
 ||seed-mix-image.spotifycdn.com^$domain=open.spotify.com
 ||newjams-images.scdn.co^$domain=open.spotify.com
