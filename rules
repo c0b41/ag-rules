@@ -143,6 +143,8 @@ youtube.com#$#.ytd-thumbnail{ border-radius:unset !important; }
 ||music.youtube.com/youtubei/v1/log_event^$domain=music.youtube.com
 ||youtube.com/youtubei/v1/log_event^$domain=www.youtube.com
 ||youtube-nocookie.com/youtubei/v1/log_event
+! Search suggestions
+||suggestqueries-clients*.youtube.com/complete/search^
 
 ! Shorts
 youtube.com##[title="Shorts"]
