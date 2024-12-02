@@ -34,8 +34,8 @@ github.com#$#.feed-left-sidebar{ width:300px !important; }
 ! Twitter
 
 ! For bullshit Fonts
-abs.twimg.com/fonts/chirp-*.woff$font
-abs.twimg.com/fonts/v2/chirp-*.woff$font
+abs.twimg.com/responsive-web/client-web/Chirp-*.woff$font
+abs.twimg.com/responsive-web/client-web/Chirp-*.woff$font
 
 
 x.com#$#[role="menu"]{ width: 250px; }
