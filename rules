@@ -59,6 +59,7 @@ x.com##a[href="/i/monetization"]
 x.com##a[href="/jobs"]
 x.com##a[href*="/analytics"]:upward(div):remove()
 x.com##div[data-testid="sidebarColumn"]
+x.com##div[data-testid="GrokDrawer"]
 x.com##[aria-label="Topluluklar"]
 ||x.com/i/api/1.1/users/recommendations.json
 !x.com##div[aria-label^="Zaman Akışı"] > div > div > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
@@ -222,12 +223,12 @@ instagram.com#$#._acun{ background-color: #fff !important; padding-bottom: 30px 
 instagram.com#$#._acus{ align-items: center !important; }
 
 ! Current styles
-instagram.com#$#._akej{ max-width: 750px !important; padding-top: 20px !important; margin: 0 auto !important; }
+instagram.com#$#.xw7yly9{ max-width: 750px !important; padding-top: 20px !important; margin: 0 auto !important; }
 instagram.com##._aak3
 instagram.com##._aak9
+instagram.com##.x6bx242
+instagram.com##[data-pagelet="IGDChatTabsRootContent"]
 ||instagram.com/logging/falco
-! https://github.com/AdguardTeam/AdguardFilters/issues/137874 Broken rule for revert.
-instagram.com##article[role="presentation"] > div:-abp-has(span:-abp-contains(/Gesponsert|Sponsored|Geborg|Sponzorováno|Sponsoreret|Χορηγούμενη|Publicidad|Sponsoroitu|Sponsorisé|Bersponsor|Sponsorizzato|広告|광고|Ditaja|Sponset|Gesponsord|Sponsorowane|Patrocinado|Реклама|Sponsrad|ได้รับการสนับสนุน|May Sponsor|Sponsorlu|赞助内容|贊助|প্রযোজিত|પ્રાયોજિત|स्पॉन्सर्ड|Sponzorirano|ಪ್ರಾಯೋಜಿತ|സ്‌പോൺസർ ചെയ്‌തത്|पुरस्‍कृत|प्रायोजित|ਪ੍ਰਾਯੋਜਿਤ|මුදල් ගෙවා ප්‍රචාරය කරන ලදි|Sponzorované|விளம்பரதாரர்கள்|స్పాన్సర్ చేసింది|Được tài trợ|Спонсорирано|Commandité|Sponsorizat|Спонзорисано/))
 
 substack.com#$#html { overflow: visible!important; }
 substack.com#$#body { overflow: visible!important; }
@@ -236,5 +237,9 @@ substack.com##.default-intro-popup
 
 last.fm##a[href="/pro"]
 last.fm##.stationlink-list
+last.fm##.metadata-column
 
 trello.com##.js-list-color-picker
+
+||music.apple.com/includes/*$domain=music.apple.com
+music.apple.com##[data-testid="player-bar"]
