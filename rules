@@ -74,6 +74,7 @@ x.com#%#//scriptlet('json-prune', 'data.explore_page.body.initialTimeline.timeli
 open.spotify.com##[data-testid="inAppMessageIframe"]
 open.spotify.com##[data-testid="signup-bar"]
 open.spotify.com##[aria-label="Premium'a Yükselt"]
+open.spotify.com##[aria-label="Notification to reload the page"]
 open.spotify.com##.sponsor-container
 open.spotify.com##div.GenericModal__overlay.GenericModal__overlay--animated.GenericModal__overlay--afterOpen
 open.spotify.com##a[href^="/download"]
@@ -139,6 +140,9 @@ youtube.com##.html5-endscreen
 youtube.com###voice-search-button
 youtube.com##.ytp-quality-menu [role="menuitemradio"]:has-text(Premium)
 youtube.com#$#.ytd-thumbnail{ border-radius:unset !important; }
+
+$removeparam=/^(pp|list|start_radio)=/
+@@|youtube.com/watch?^$removeparam
 
 ! User actions trackers
 ||music.youtube.com/youtubei/v1/log_event^$domain=music.youtube.com
@@ -211,6 +215,8 @@ news.ycombinator.com##tr.athing span.titleline > a:has-text(/\bReddit\b/):upward
 ! Reddit
 reddit.com##div.side:nth-child(5) > div.spacer:nth-child(5) > a.premium-banner-outer > form.premium-banner
 reddit.com#$#[aria-label="downvote"]{ display:block !important; visibility: unset !important;}
+reddit.com##.redesign-beta-optin
+reddit.com##.hidden-post-placeholder
 ! Others
 
 filmmodu*.com###preroll-link
@@ -243,8 +249,9 @@ last.fm##.metadata-column
 
 trello.com##.js-list-color-picker
 
-||music.apple.com/includes/*$domain=music.apple.com
 music.apple.com##[data-testid="player-bar"]
+music.apple.com##[data-testid="banner-container"]
+||music.apple.com/includes/*$domain=music.apple.com
 ||js-cdn.music.apple.com/musickit/v3/*
 
 shazam.com##[data-test-id="home_impression_browserExtensionPromoBanner"]
