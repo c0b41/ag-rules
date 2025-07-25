@@ -244,10 +244,17 @@ last.fm##.stationlink-list
 last.fm##.metadata-column
 
 trello.com##.js-list-color-picker
+trello.com##aside
 trello.com##[aria-label="Board switcher"]
 trello.com##[aria-label="Inbox"]
 trello.com##[aria-label="Planner"]
 trello.com##[aria-label="Drag to resize"]
+trello.com#$#.board-header > div{ padding: 0 !important; }
+trello.com#$#board-canvas{ margin-bottom: 0 !important; margin-top: 5px !important; }
+trello.com#$##board{ padding-bottom: 20px !important; }
+trello.com#$#[data-testid="card-back-name"]{ width: unset !important; }
+trello.com##.f4L8hdFI5mPAUb
+
 
 music.apple.com##[data-testid="player-bar"]
 music.apple.com##[data-testid="banner-container"]
