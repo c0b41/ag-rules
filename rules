@@ -180,6 +180,7 @@ twitch.tv###sideNav > div > div > div > div > div.simplebar-scroll-content > div
 #twitch.tv##iframe[title="Display Ad"]
 #twitch.tv##[data-a-target="browse-card-ad-slot"]
 #twitch.tv##[data-a-target="browse-banner-ad-slot"]
+twitch.tv##[data-a-target="tw-core-button-label-text"]:has-text(/\bAd-Free\b/):upward(div)
 ||ads.twitch.tv$domain=twitch.tv
 
 ! Dogshit new Directory ui replace with old ui url
