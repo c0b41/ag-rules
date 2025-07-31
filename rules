@@ -152,14 +152,16 @@ youtube.com#$#ytmusic-description-shelf-renderer[is-track-lyrics-page]{ user-sel
 
 ! Shorts
 youtube.com##[title="Shorts"]
-youtube.com##.ytd-reel-shelf-renderer:has-text(/\bShorts\b/):upward(ytd-reel-shelf-renderer):remove()
 youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:not([hidden]):upward(6)
 youtube.com##.ytd-thumbnail-overlay-time-status-renderer[aria-label="Shorts"]:upward(#dismissible)
 youtube.com##ytd-rich-item-renderer:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"])
 youtube.com##ytd-rich-grid-row:style(display:contents !important;)
 youtube.com###contents.ytd-rich-grid-row:style(display:contents !important;)
 youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
-www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
+youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
+! reddit.com/r/uBlockOrigin/comments/1lkyr5b/ubo_filter_to_disable_youtube_shorts_no_longer/
+youtube.com###contents > grid-shelf-view-model:has(.shortsLockupViewModelHost)
+
 
 ! Spam stackoverflow websites
 google.com#?#cite:contains(/anycodings.com/):nth-ancestor(5)
