@@ -139,6 +139,7 @@ youtube.com##[title="Miniplayer (i)"]
 youtube.com##ytd-browse[page-subtype="home"]
 youtube.com##.html5-endscreen
 youtube.com###voice-search-button
+youtube.com###ticket-shelf
 youtube.com##.ytp-quality-menu [role="menuitemradio"]:has-text(Premium)
 youtube.com#$#.ytd-thumbnail{ border-radius:unset !important; }
 youtube.com#$#ytmusic-description-shelf-renderer[is-track-lyrics-page]{ user-select: text !important; }
@@ -159,6 +160,7 @@ youtube.com##ytd-rich-grid-row:style(display:contents !important;)
 youtube.com###contents.ytd-rich-grid-row:style(display:contents !important;)
 youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
+youtube.com##.ytd-reel-shelf-renderer:has-text(/\bShorts\b/):upward(ytd-reel-shelf-renderer):remove()
 ! reddit.com/r/uBlockOrigin/comments/1lkyr5b/ubo_filter_to_disable_youtube_shorts_no_longer/
 youtube.com###contents > grid-shelf-view-model:has(.shortsLockupViewModelHost)
 
@@ -248,6 +250,7 @@ substack.com##.default-intro-popup
 last.fm##a[href="/pro"]
 last.fm##.stationlink-list
 last.fm##.metadata-column
+last.fm##.listening-report-row--upsell
 
 trello.com##.js-list-color-picker
 trello.com##aside
