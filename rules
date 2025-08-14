@@ -178,6 +178,7 @@ twitch.tv#%#//scriptlet('remove-cookie', 'unique_id_durable')
 twitch.tv###channel-player-disclosures
 twitch.tv##[aria-label="Popular Channels"]
 twitch.tv##[aria-label*="Viewers Also Watch"]
+twitch.tv##[aria-label*="Recommended Categories"]
 twitch.tv##[data-popper-placement="bottom"]
 twitch.tv##[data-test-selector="sad-overlay"]
 twitch.tv##.Layout-sc-nxg1ff-0 gTIuHP
@@ -276,3 +277,5 @@ shazam.com##[data-test-id="artist_impression_browserExtensionPromoBanner"]
 shazam.com##[class^="FloatingButtonContainer_floatingButtonContainer"]
 shazam.com##[class^="ExtensionPromoBanner_promoBannerContainer"]
 shazam.com##[class^="Footer_policyLabel"]
+
+mail.google.com##[aria-label~="Gemini"]:upward(div):remove()
