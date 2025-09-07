@@ -146,6 +146,8 @@ youtube.com###ticket-shelf
 youtube.com##.ytp-quality-menu [role="menuitemradio"]:has-text(Premium)
 youtube.com#$#.ytd-thumbnail{ border-radius:unset !important; }
 youtube.com#$#ytmusic-description-shelf-renderer[is-track-lyrics-page]{ user-select: text !important; }
+! Members-Only Videos
+youtube.com##ytd-browse[page-subtype="channels"] ytd-rich-item-renderer:has(.badge-style-type-members-only)
 
 ! User actions trackers
 ||music.youtube.com/youtubei/v1/log_event^$domain=music.youtube.com
