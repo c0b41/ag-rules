@@ -257,6 +257,7 @@ last.fm##a[href="/pro"]
 last.fm##.stationlink-list
 last.fm##.metadata-column
 last.fm##.listening-report-row--upsell
+last.fm##.header-new-on-tour
 
 trello.com##.js-list-color-picker
 trello.com##aside
@@ -268,7 +269,7 @@ trello.com#$#.board-header > div{ padding: 0 !important; }
 trello.com#$#board-canvas{ margin-bottom: 0 !important; margin-top: 5px !important; }
 trello.com#$##board{ padding-bottom: 20px !important; }
 trello.com#$#[data-testid="card-back-name"]{ width: unset !important; }
-trello.com##.f4L8hdFI5mPAUb
+trello.com###island-nav
 
 
 music.apple.com##[data-testid="player-bar"]
