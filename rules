@@ -63,6 +63,7 @@ x.com##a[href*="/analytics"]:upward(div):remove()
 x.com##div[data-testid="sidebarColumn"]
 x.com##div[data-testid="GrokDrawer"]
 x.com##[aria-label="Topluluklar"]
+x.com##[aria-label="Zaman Akışı: Keşfet"]
 x.com##[data-testid="verified_profile_visitor_upsell"]
 ||x.com/i/api/1.1/users/recommendations.json
 !x.com##div[aria-label^="Zaman Akışı"] > div > div > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
@@ -246,6 +247,10 @@ instagram.com##._aak3
 instagram.com##._aak9
 instagram.com##.x6bx242
 instagram.com##[data-pagelet="IGDChatTabsRootContent"]
+! Video overlay
+!instagram.com##[playsinline=""]
+instagram.com##[data-visualcompletion="ignore"]
+
 ||instagram.com/logging/falco
 
 substack.com#$#html { overflow: visible!important; }
@@ -269,6 +274,7 @@ trello.com#$#.board-header > div{ padding: 0 !important; }
 trello.com#$#board-canvas{ margin-bottom: 0 !important; margin-top: 5px !important; }
 trello.com#$##board{ padding-bottom: 20px !important; }
 trello.com#$#[data-testid="card-back-name"]{ width: unset !important; }
+trello.com##.f4L8hdFI5mPAUb
 trello.com###island-nav
 
 
