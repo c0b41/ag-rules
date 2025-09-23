@@ -64,6 +64,7 @@ x.com##div[data-testid="sidebarColumn"]
 x.com##div[data-testid="GrokDrawer"]
 x.com##[aria-label="Topluluklar"]
 x.com##[aria-label="Zaman Akışı: Keşfet"]
+x.com##[aria-label="Profil"]
 x.com##[data-testid="verified_profile_visitor_upsell"]
 ||x.com/i/api/1.1/users/recommendations.json
 !x.com##div[aria-label^="Zaman Akışı"] > div > div > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
@@ -147,8 +148,8 @@ youtube.com###ticket-shelf
 youtube.com##.ytp-quality-menu [role="menuitemradio"]:has-text(Premium)
 youtube.com#$#.ytd-thumbnail{ border-radius:unset !important; }
 youtube.com#$#ytmusic-description-shelf-renderer[is-track-lyrics-page]{ user-select: text !important; }
-! Members-Only Videos
-youtube.com##ytd-browse[page-subtype="channels"] ytd-rich-item-renderer:has(.badge-style-type-members-only)
+! Members-Only Videos - broken some reason
+!youtube.com##ytd-browse[page-subtype="channels"] ytd-rich-item-renderer:has(.badge-style-type-members-only)
 
 ! User actions trackers
 ||music.youtube.com/youtubei/v1/log_event^$domain=music.youtube.com
@@ -156,6 +157,11 @@ youtube.com##ytd-browse[page-subtype="channels"] ytd-rich-item-renderer:has(.bad
 ||youtube-nocookie.com/youtubei/v1/log_event
 ! Search suggestions
 ||suggestqueries-clients*.youtube.com/complete/search^
+! dont send any views or telemetry ^^
+||youtube.com/api/stats/ads?
+||youtube.com/api/stats/atr
+||youtube.com/api/stats/delayplay?
+||youtube.com/api/stats/qoe?
 
 ! Shorts
 youtube.com##[title="Shorts"]
@@ -197,8 +203,8 @@ twitch.tv###sideNav > div > div > div > div > div.simplebar-scroll-content > div
 twitch.tv##[data-a-target="tw-core-button-label-text"]:has-text(/\bAd-Free\b/):upward(div)
 ||ads.twitch.tv$domain=twitch.tv
 
-! Dogshit new Directory ui replace with old ui url
-twitch.tv#%#navigation.addEventListener("navigate",t=>{let a=new URL(t.destination.url);a.pathname.startsWith("/directory/category/")&&!a.pathname.includes("/list")&&(window.location.pathname=`${a.pathname}/list`)});
+! Dogshit new Directory ui replace with old ui url - not working anymore
+!twitch.tv#%#navigation.addEventListener("navigate",t=>{let a=new URL(t.destination.url);a.pathname.startsWith("/directory/category/")&&!a.pathname.includes("/list")&&(window.location.pathname=`${a.pathname}/list`)});
 
 ! Twitch Extensions
 ||extension-files.twitch.tv
@@ -249,7 +255,8 @@ instagram.com##.x6bx242
 instagram.com##[data-pagelet="IGDChatTabsRootContent"]
 ! Video overlay
 !instagram.com##[playsinline=""]
-instagram.com##[data-visualcompletion="ignore"]
+! this brokes sidebar message element
+!instagram.com##[data-visualcompletion="ignore"]
 
 ||instagram.com/logging/falco
 
