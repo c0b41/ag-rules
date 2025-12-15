@@ -57,6 +57,8 @@ x.com##a[href="/i/spaces/start"]
 x.com##a[href="/i/grok"]
 x.com##a[href="/i/monetization"]
 x.com##a[href="/i/chat"]
+x.com##a[href="/i/connect_people"]
+x.com##a[href="/i/premium-business"]
 !x.com##a[href*="/communities"]
 x.com##a[href="/jobs"]
 x.com##a[href*="/analytics"]:upward(div):remove()
@@ -67,6 +69,7 @@ x.com##[aria-label="Zaman Akışı: Keşfet"]
 x.com##[aria-label="Profil"]
 x.com##[aria-label="Grok işlemleri"]
 x.com##[data-testid="verified_profile_visitor_upsell"]
+x.com##[data-testid="chat-drawer-root"]
 ||x.com/i/api/1.1/users/recommendations.json
 !x.com##div[aria-label^="Zaman Akışı"] > div > div > div > div:has(h2:has-text(Kimi takip etmeli)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
 !x.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip edilebilecek Konular)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
@@ -142,17 +145,27 @@ open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;}
 youtube.com##[title="Play on TV"]
 youtube.com##[title="Miniplayer (i)"]
 youtube.com##.ytp-fullscreen-quick-actions
+youtube.com##.ytp-watch-later-button
+youtube.com##.ytp-share-button
 ! Home page content
 !youtube.com##ytd-browse[page-subtype="home"]
+youtube.com##yt-touch-feedback-shape
 youtube.com##.html5-endscreen
 youtube.com###voice-search-button
 youtube.com###ticket-shelf
 youtube.com##.ytp-quality-menu [role="menuitemradio"]:has-text(Premium)
 youtube.com#$#.ytd-thumbnail{ border-radius:unset !important; }
 youtube.com#$#ytmusic-description-shelf-renderer[is-track-lyrics-page]{ user-select: text !important; }
+! Fullscreen player stuff
+youtube.com##.html5-video-player.ended-mode .ytp-fullscreen-grid
+youtube.com##.html5-video-player.ended-mode.ytp-autonav-endscreen-cancelled-state .html5-endscreen:style( display: block !important; )
+youtube.com##.html5-video-player.ytp-fullscreen.ended-mode.ytp-autonav-endscreen-cancelled-state .html5-endscreen:style( top: 48px !important; )
+! reddit.com/r/uBlockOrigin/comments/1lkyr5b/ubo_filter_to_disable_youtube_shorts_no_longer/
+youtube.com###contents > grid-shelf-view-model:has(.shortsLockupViewModelHost)
 ! Members-Only Videos
-!youtube.com##ytd-browse[page-subtype="channels"] ytd-rich-item-renderer:has(.badge-style-type-members-only)
-
+youtube.com###items > ytd-item-section-renderer > #contents > ytd-compact-movie-renderer:has(> #dismissible   div[aria-label='Free with ads'])
+youtube.com###related yt-lockup-view-model .yt-content-metadata-view-model__metadata-row--metadata-row-wrap:has-text(Üyelere özel):upward(yt-lockup-view-model)
+youtube.com###related yt-lockup-view-model .yt-content-metadata-view-model__metadata-row--metadata-row-wrap:has-text(Mix- ):upward(yt-lockup-view-model)
 ! User actions trackers
 ||music.youtube.com/youtubei/v1/log_event^$domain=music.youtube.com
 ||youtube.com/youtubei/v1/log_event^$domain=www.youtube.com
@@ -165,17 +178,35 @@ youtube.com#$#ytmusic-description-shelf-renderer[is-track-lyrics-page]{ user-sel
 ||youtube.com/api/stats/qoe?
 
 ! Shorts
-youtube.com##[title="Shorts"]
-youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:not([hidden]):upward(6)
-youtube.com##.ytd-thumbnail-overlay-time-status-renderer[aria-label="Shorts"]:upward(#dismissible)
-youtube.com##ytd-rich-item-renderer:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"])
-youtube.com##ytd-rich-grid-row:style(display:contents !important;)
-youtube.com###contents.ytd-rich-grid-row:style(display:contents !important;)
-youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
-youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
-youtube.com##.ytd-reel-shelf-renderer:has-text(/\bShorts\b/):upward(ytd-reel-shelf-renderer):remove()
-! reddit.com/r/uBlockOrigin/comments/1lkyr5b/ubo_filter_to_disable_youtube_shorts_no_longer/
-youtube.com###contents > grid-shelf-view-model:has(.shortsLockupViewModelHost)
+! YT Homepage and Subscriptions (Grid View) - Hide the Shorts section
+youtube.com##[is-shorts]
+! YT Menu - Hide the Shorts button
+www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
+! YT Search - Hide Shorts
+www.youtube.com##ytd-search ytd-video-renderer:has([overlay-style="SHORTS"],[href^="/shorts/"])
+! YT Search, Channels, Subscriptions (List View) and Sidebar/Below Player Recommendations - Hide the Shorts sections
+www.youtube.com##ytd-reel-shelf-renderer
+! YT Channels - Hide the Shorts tab
+www.youtube.com##[tab-title="Shorts"]
+! YT Subscriptions - Hide Shorts - Grid View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer:has([overlay-style="SHORTS"],[href^="/shorts/"])
+! YT Subscriptions - Hide Shorts - List View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer:has([overlay-style="SHORTS"],[href^="/shorts/"])
+! YT Subscriptions - New Layout - Hide Shorts
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer:has([overlay-style="SHORTS"],[href^="/shorts/"])
+! YT Sidebar - Hide Shorts
+www.youtube.com###related :is(ytd-compact-video-renderer,yt-lockup-view-model):has([overlay-style="SHORTS"],[href^="/shorts/"])
+
+! YT Home - Hide Mixes
+youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
+! YT Sidebar - Hide Mixes
+youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-compact-video-renderer):has([href*="&start_radio=1"])
+! YT Search- Hide Mixes
+youtube.com##ytd-radio-renderer, :is(ytd-search yt-lockup-view-model,ytd-video-renderer[is-search]):has([href*="&start_radio=1"][aria-label])
+! YT Player - Hide Mixes in Video End Cards
+youtube.com##.ytp-videowall-still[data-is-mix="true"]
+! YT Sidebar - Hide "YouTube" (Music) playlists
+youtube.com##ytd-compact-playlist-renderer:has([title^="YouTube"])
 
 
 ! Spam stackoverflow websites
@@ -191,6 +222,7 @@ twitch.tv#%#//scriptlet('remove-cookie', 'unique_id_durable')
 twitch.tv###channel-player-disclosures
 twitch.tv##[aria-label="Popular Channels"]
 twitch.tv##[aria-label*="Viewers Also Watch"]
+twitch.tv##[aria-label*="Open stories"]:upward(div):upward(div):remove()
 twitch.tv##[aria-label*="Recommended Categories"]
 twitch.tv##[data-popper-placement="bottom"]
 twitch.tv##[data-test-selector="sad-overlay"]
@@ -202,6 +234,7 @@ twitch.tv###sideNav > div > div > div > div > div.simplebar-scroll-content > div
 #twitch.tv##[data-a-target="browse-card-ad-slot"]
 #twitch.tv##[data-a-target="browse-banner-ad-slot"]
 twitch.tv##[data-a-target="tw-core-button-label-text"]:has-text(/\bAd-Free\b/):upward(div)
+twitch.tv##.tw-new-item-indicator__container
 ||ads.twitch.tv$domain=twitch.tv
 
 ! Dogshit new Directory ui replace with old ui url
@@ -293,8 +326,28 @@ music.apple.com##[data-testid="banner-container"]
 shazam.com##[data-test-id="home_impression_browserExtensionPromoBanner"]
 shazam.com##[data-test-id="home_impression_shazamButton"]
 shazam.com##[data-test-id="artist_impression_browserExtensionPromoBanner"]
+shazam.com##[data-test-id="artist_impression_concertsPromoBanner"]
+shazam.com##[data-test-id="track_impression_concertsPromoBanner"]
 shazam.com##[class^="FloatingButtonContainer_floatingButtonContainer"]
 shazam.com##[class^="ExtensionPromoBanner_promoBannerContainer"]
 shazam.com##[class^="Footer_policyLabel"]
+shazam.com##[class^="AlbumPlaylistHeader_blurBg"]
+shazam.com##[class^="VideoHeaderContent"]
+shazam.com##[class^="Header_videoContainer"]
+shazam.com##[class^="VideoFallback_blurBackground"]
+shazam.com##[class^="VideoFallback_grayBackground"]
+shazam.com##[class^="NewTrackPageHeader_blurBackgroundContainer"]
+shazam.com#$#[class^="NewTrackPageHeader_playableCover"]{ width: 70% !important; }
+shazam.com#$#[class^="NewTrackPageHeader_headerContent"]{ margin: 70px 0 0 !important; }
+shazam.com##[data-test-id="track_impression_topSongs"]
+shazam.com##[data-test-id="track_impression_similarTracks"]
 
 mail.google.com##[aria-label~="Gemini"]:upward(div):remove()
+
+discord.com##a[href="/shop"]
+discord.com##a[href="/quest-home"]
+discord.com##a[href="/store"]
+
+elevenlabs.io##+js(nlp, webgl)
+raycast.com##+js(nlp, webgl)
+raycast.com##[class^="page_heroBackground"]
