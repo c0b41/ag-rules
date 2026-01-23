@@ -61,6 +61,7 @@ x.com##a[href="/i/connect_people"]
 x.com##a[href="/i/premium-business"]
 !x.com##a[href*="/communities"]
 x.com##a[href="/jobs"]
+x.com##a[href="/i/jf/creators/studio"]
 x.com##a[href*="/analytics"]:upward(div):remove()
 x.com##div[data-testid="sidebarColumn"]
 x.com##div[data-testid="GrokDrawer"]
@@ -75,7 +76,7 @@ x.com##[data-testid="chat-drawer-root"]
 !x.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip edilebilecek Konular)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
 !x.com#%#//scriptlet('json-prune', 'data.user.result.timeline_v2.timeline.instructions.[].entries.[].content.clientEventInfo')
 ! list page follow suggestion block
-x.com#%#//scriptlet('json-prune', 'data.viewer.list_management_timeline.timeline.instructions.3.entries.0')
+x.com#%#//scriptlet('json-prune', 'data.viewer.list_management_timeline.timeline.instructions.1.entries.0')
 ! trending page video carousel blcok
 x.com#%#//scriptlet('json-prune', 'data.explore_page.body.initialTimeline.timeline.timeline.instructions.1.entries.3')
 
@@ -292,6 +293,7 @@ instagram.com##[data-pagelet="IGDChatTabsRootContent"]
 !instagram.com##[data-visualcompletion="ignore"]
 
 ||instagram.com/logging/falco
+instagram.com##a[href^="/reels"]
 
 substack.com#$#html { overflow: visible!important; }
 substack.com#$#body { overflow: visible!important; }
@@ -310,6 +312,7 @@ trello.com##[aria-label="Board switcher"]
 trello.com##[aria-label="Inbox"]
 trello.com##[aria-label="Planner"]
 trello.com##[aria-label="Drag to resize"]
+trello.com##[data-testid="premium-referrer-popup-dismiss-button"]
 trello.com#$#.board-header > div{ padding: 0 !important; }
 trello.com#$#board-canvas{ margin-bottom: 0 !important; margin-top: 5px !important; }
 trello.com#$##board{ padding-bottom: 20px !important; }
@@ -351,3 +354,9 @@ discord.com##a[href="/store"]
 elevenlabs.io##+js(nlp, webgl)
 raycast.com##+js(nlp, webgl)
 raycast.com##[class^="page_heroBackground"]
+
+tiktok.com###top-right-action-bar
+!tiktok.com##[aria-label="Activity"]:upward(1):remove()
+!tiktok.com##[data-e2e="nav-live"]:upward(1):remove()
+! Video Ad Area
+!tiktok.com##[data-e2e="ttam-ads-cta"]:upward(3):remove()
