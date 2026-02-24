@@ -123,12 +123,13 @@ open.spotify.com#$#.gMx7ZQAGhBSydDebRjyI{ border-radius: unset !important;}
 ! Trackers and ads streaming
 ||creativeservice-production.scdn.co^$domain=open.spotify.com
 ||adeventtrackermonitoring.spotify.com^$domain=open.spotify.com
-||adeventtracker.spotify.com^
+||adeventtracker.spotify.com^$domain=open.spotify.com
+||aet.spotify.com^$domain=open.spotify.com
 ||spclient.wg.spotify.com/storage-resolve/files/audio/interactive/*$domain=open.spotify.com
-||gew1-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
-||gew2-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
-||gew3-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
-||gew4-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com^
+||gew1-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com
+||gew2-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com
+||gew3-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com
+||gew4-spclient.spotify.com/storage-resolve/files/*$domain=open.spotify.com
 ! Covers
 ||pickasso.spotifycdn.com^$domain=open.spotify.com
 ||dailymix-images.scdn.co^$domain=open.spotify.com
@@ -227,13 +228,14 @@ twitch.tv##[aria-label*="Open stories"]:upward(div):upward(div):remove()
 twitch.tv##[aria-label*="Recommended Categories"]
 twitch.tv##[data-popper-placement="bottom"]
 twitch.tv##[data-test-selector="sad-overlay"]
+twitch.tv##[data-a-target="roblox-link"]
 twitch.tv##.Layout-sc-nxg1ff-0 gTIuHP
 twitch.tv##.top-nav__prime
 twitch.tv###root > div > div.Layout-sc-nxg1ff-0.qViOJ > div.Layout-sc-nxg1ff-0.kXaHWh > main > div.root-scrollable.scrollable-area.scrollable-area--suppress-scroll-x > div.simplebar-scroll-content > div > div > div > div.Layout-sc-nxg1ff-0.gRnGwD.front-page-carousel
 twitch.tv###sideNav > div > div > div > div > div.simplebar-scroll-content > div > div > div.side-bar-contents > div > div.Layout-sc-nxg1ff-0.aleoz > div:nth-child(3)
-#twitch.tv##iframe[title="Display Ad"]
-#twitch.tv##[data-a-target="browse-card-ad-slot"]
-#twitch.tv##[data-a-target="browse-banner-ad-slot"]
+!twitch.tv##iframe[title="Display Ad"]
+!twitch.tv##[data-a-target="browse-card-ad-slot"]
+!twitch.tv##[data-a-target="browse-banner-ad-slot"]
 twitch.tv##[data-a-target="tw-core-button-label-text"]:has-text(/\bAd-Free\b/):upward(div)
 twitch.tv##.tw-new-item-indicator__container
 ||ads.twitch.tv$domain=twitch.tv
@@ -252,7 +254,6 @@ twitch.tv##.extension-taskbar
 
 
 ! https://github.com/robbiewxyz/hackernews-threadlines
-news.ycombinator.com##.togg:before:style( content: ''; display: block; width: 1px; background-color: #9a9a9a; position: absolute; height: 10000px; padding: 8px; margin: 2px; background-clip: content-box; )
 news.ycombinator.com##.comment-tree:style( overflow: hidden; position: relative; )
 news.ycombinator.com##.default, .comment, .morelink, .morespace:style( position: relative; )
 news.ycombinator.com##.default, .comment:style( background-color: #f6f6ef; box-shadow: 0 4px 0 8px #f6f6ef; position: relative; width: 100%; )
@@ -272,9 +273,6 @@ reddit.com#$#[aria-label="downvote"]{ display:block !important; visibility: unse
 reddit.com##.redesign-beta-optin
 reddit.com##.hidden-post-placeholder
 ! Others
-
-filmmodu*.com###preroll-link
-||filmmodu*.com/ph/ps3.png$domain=filmmodu*.com
 
 ! Broken instagram styles 
 instagram.com#$#._a995{ margin-top: 30px !important; }
@@ -305,6 +303,7 @@ last.fm##.stationlink-list
 last.fm##.metadata-column
 last.fm##.listening-report-row--upsell
 last.fm##.header-new-on-tour
+last.fm##.mpu-subscription-upsell
 
 trello.com##.js-list-color-picker
 trello.com##aside
