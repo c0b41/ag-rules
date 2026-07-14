@@ -57,7 +57,7 @@ x.com##a[href="/i/verified-choose"]
 x.com##a[href="/i/spaces/start"]
 x.com##a[href="/i/grok"]
 x.com##a[href="/i/monetization"]
-x.com##a[href="/i/chat"]
+!x.com##a[href="/i/chat"]
 x.com##a[href="/i/connect_people"]
 x.com##a[href="/i/premium-business"]
 !x.com##a[href*="/communities"]
@@ -77,7 +77,7 @@ x.com##[data-testid="chat-drawer-root"]
 !x.com##div[aria-label^="Zaman Akışı"] > div > div:has(h2:has-text(Takip edilebilecek Konular)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
 !x.com#%#//scriptlet('json-prune', 'data.user.result.timeline_v2.timeline.instructions.[].entries.[].content.clientEventInfo')
 ! list page follow suggestion block
-x.com#%#//scriptlet('json-prune', 'data.viewer.list_management_timeline.timeline.instructions.1.entries.0')
+x.com#%#//scriptlet('json-prune', 'data.viewer.list_management_timeline.timeline.instructions.3.entries.0')
 ! trending page video carousel blcok
 x.com#%#//scriptlet('json-prune', 'data.explore_page.body.initialTimeline.timeline.timeline.instructions.1.entries.3')
 
@@ -321,6 +321,7 @@ trello.com##[aria-label="Inbox"]
 trello.com##[aria-label="Planner"]
 trello.com##[aria-label="Drag to resize"]
 trello.com##[data-testid="premium-referrer-popup-dismiss-button"]
+trello.com##[data-testid="quick-card-editor-create-jira-work-item"]
 trello.com#$#.board-header > div{ padding: 0 !important; }
 trello.com#$#board-canvas{ margin-bottom: 0 !important; margin-top: 5px !important; }
 trello.com#$##board{ padding-bottom: 20px !important; }
@@ -331,6 +332,7 @@ trello.com###island-nav
 
 music.apple.com##[data-testid="player-bar"]
 music.apple.com##[data-testid="banner-container"]
+music.apple.com##.navigation__native-cta
 ||music.apple.com/includes/*$domain=music.apple.com
 ||js-cdn.music.apple.com/musickit/v3/*
 
@@ -339,6 +341,7 @@ shazam.com##[data-test-id="home_impression_shazamButton"]
 shazam.com##[data-test-id="artist_impression_browserExtensionPromoBanner"]
 shazam.com##[data-test-id="artist_impression_concertsPromoBanner"]
 shazam.com##[data-test-id="track_impression_concertsPromoBanner"]
+shazam.com##[data-test-id="footerSection"]
 shazam.com##[class^="FloatingButtonContainer_floatingButtonContainer"]
 shazam.com##[class^="ExtensionPromoBanner_promoBannerContainer"]
 shazam.com##[class^="Footer_policyLabel"]
@@ -373,3 +376,4 @@ tiktok.com###top-right-action-bar
 ! Video Ad Area
 !tiktok.com##[data-e2e="ttam-ads-cta"]:upward(3):remove()
 pinterest.com##[data-test-id="business-account-switcher"]
+genius.com##[class^="RightSidebar__Container"]
